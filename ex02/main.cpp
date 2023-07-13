@@ -6,12 +6,13 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 12:53:52 by zwong             #+#    #+#             */
-/*   Updated: 2023/05/26 12:54:07 by zwong            ###   ########.fr       */
+/*   Updated: 2023/07/13 13:44:01 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
+// Same stuff, just another Derived Class with new function() and different print messages
 int main (void) {
 	ClapTrap jessy = ClapTrap("Jessy");
 	FragTrap lilo = FragTrap("Lilo");
