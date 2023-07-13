@@ -6,7 +6,7 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 12:53:40 by zwong             #+#    #+#             */
-/*   Updated: 2023/05/26 12:54:07 by zwong            ###   ########.fr       */
+/*   Updated: 2023/07/13 13:41:04 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ ScavTrap &ScavTrap::operator=(ScavTrap other) {
 	return (*this);
 }
 
+// Overrides the ClapTrap::attack() - to print "ScavTrap"
 void ScavTrap::attack(const std::string &target) {
 	if (this->energy_points_ == 0) {
 		std::cout << "ScavTrap: " << this->name_ << " doesn't have enough energy to attack!" << std::endl;
@@ -64,6 +65,7 @@ void ScavTrap::attack(const std::string &target) {
 	std::cout << "ScavTrap: " << this->name_ << " attacks " << target << ", with " << this->attack_dmg_ << " points of damage!" << std::endl;
 }
 
+// If ScavTrap is parsed, it will treat the target with the attribute of ClapTrap.
 void ScavTrap::attack(ClapTrap &target) {
 	if (this->energy_points_ == 0) {
 		std::cout << "ScavTrap: " << this->name_ << " doesn't have enough energy to attack!" << std::endl;

@@ -6,12 +6,15 @@
 /*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 12:53:38 by zwong             #+#    #+#             */
-/*   Updated: 2023/05/26 12:54:07 by zwong            ###   ########.fr       */
+/*   Updated: 2023/07/13 13:40:14 by zwong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
+// Learn inheritance of base class to create a Derived Class
+// ScavTrap has the same functions and more (also different print message)
+// Before ScavTrap is created, ClapTrap will be created first in the background
 int main (void) {
 	ScavTrap dobby = ScavTrap("Dobby");
 	ScavTrap elvis = ScavTrap("Elvis");
